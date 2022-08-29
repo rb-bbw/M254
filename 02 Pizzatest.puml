@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+left header Remo Bergamin
+/'
+Entnehmen Sie auf Zufallsbasis 5 Exemplare des gleichen Pizza-Typs.
+Überprüfen Sie jedes Exemplar auf sichtbare Gefrierschäden.
+Sind solche nicht zu erkennen, erhitzen Sie die Pizzen bei 230° Celsius während 20 Minuten.
+Sind Gefrierschäden erkennbar, geht eine entsprechende Mitteilung an die Produktionsabteilung.
+Sollte mehr als ein Exemplar beschädigt sein, muss zusätzlich die Geschäftsleitung benachrichtigt werden.
+Die gebackenen Pizzen werden nun auf ihre "Essfertigkeit" geprüft.
+Sind die Pizzen zu wenig oder zu stark gebacken, geht wiederum eine entsprechende Mitteilung an die Produktionsabteilung. Auch hier muss die Geschäftsleitung benachrichtigt werden, wenn es sich nicht nur um eine einzelne fehlerhafte Pizza handelt.
+Die fehlerfrei gebackenen Pizzen werden zusätzlich auf ihren Geschmack getestet.
+Gibt es hier Beanstandungen, wird die Abteilung Beschaffung benachrichtigt.
+Wiederum gilt bei mehr als einer fehlerhaften Pizza die Benachrichtigung der Geschäftsleitung.
+Sind keinerlei Mängel zu vermerken, gilt die Qualitätskontrolle als abgeschlossen.
+Bei einem Mangel gleich welcher Art wird die betreffende Versuchsserie nicht mehr weiter untersucht, sondern es wird eine neue Versuchsserie ausgewählt und geprüft.
+'/
+partition Pizzatest {
+    start
+
+    stop
+}
+
+@enduml
