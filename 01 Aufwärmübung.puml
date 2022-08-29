@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+'Zuerst kommt die Aktivität A.
+'Dieser folgt B und dann C.
+'Danach geht es gemeinsam (parallel) mit D und E weiter.
+'F folgt D. Wenn F oder E fertig sind, startet G.
+'Nach G folgt H falls x = 1, ansonsten folgt I.
+'Nach H folgt keine Aktivität mehr.
+'Nach I geht es wieder parallel mit J und K weiter.
+'Wenn beide fertig sind, geht es mit L weiter.
+'Ist nach L y = 1, dann geht es wieder zu I.
+'Ist nach L y = 2, dann ist der Ablauf fertig.
+start
+
+
+stop
+
+@enduml
